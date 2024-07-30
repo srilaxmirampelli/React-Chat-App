@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple chat application built with React. It allows users to send messages, Like messages, and with a pop-up sound on new messages.
 
 ## Available Scripts
 
