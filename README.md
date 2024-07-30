@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# React Chat Ap
 
 This is a simple chat application built with React. It allows users to send messages, Like messages, and with a pop-up sound on new messages.
+
+### Features
+
+- User mentions using the "@" symbol
+- Emoji picker integration
+- Like messages
+- Pop-up sound on new message
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
