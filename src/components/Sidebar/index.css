@@ -1,3 +1,8 @@
+.split {
+  display: flex;
+  height: 100vh;
+}
+
 .sidebar {
     width: 25vw;
     background-color: white;

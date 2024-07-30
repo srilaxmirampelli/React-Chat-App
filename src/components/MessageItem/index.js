@@ -1,20 +1,10 @@
-import './index.css';
-import { AiFillLike } from "react-icons/ai";
-
-const generateRandomColor = () => {
-    const letters = '0123456789ABCDEF'
-    let color = '#'
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)]
-    }
-    return color
-}
+import './index.css'
+import { AiFillLike } from "react-icons/ai"
 
 const MessageItem = (props) => {
-    const { user, message, likes, onLike } = props;
-    const initial = user.split(" ").map(name => name[0]).join("");
-    const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    const backgroundColor = generateRandomColor()
+    const { user, message, likes, onLike, backgroundColor} = props
+    const initial = user.split(" ").map(name => name[0]).join("")
+    const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     
     return (
         <div className="message-item">

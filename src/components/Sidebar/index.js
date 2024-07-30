@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
-import { CiCirclePlus } from "react-icons/ci";
-import './index.css';
+import { useState } from 'react'
+import { CiCirclePlus } from "react-icons/ci"
+import './index.css'
 
-const conversations = ["Poland Office", "Introductions", "India Office"];
+// List of Conversations
+const conversations = ["Poland Office", "Introductions", "India Office"]
 
 const Sidebar = () => {
   const [activeConversation, setActiveConversation] = useState(null)
+
+  // Sidebar Header
   const sidebarHeader = () => {
     return (
       <div className="sidebar-header">
@@ -20,13 +23,15 @@ const Sidebar = () => {
           </div>
       </div>
     </div>
-    );
-  };
+    )
+  }
 
+  // Set Conversation Active
   const onSelectConversation = (index) => {
-    setActiveConversation(index);
-  };
+    setActiveConversation(index)
+  }
 
+  // Conversations List
   const conversationList = () => {
     return (
       <div className="conversation-list">
@@ -45,11 +50,11 @@ const Sidebar = () => {
   }
 
   return (
-    <div className="sidebar">
-      {sidebarHeader()}
-      {conversationList()}
-    </div>
-  );
-};
+      <div className="sidebar">
+        {sidebarHeader()}
+        {conversationList()}
+      </div>
+  )
+}
 
-export default Sidebar;
+export default Sidebar

@@ -1,4 +1,6 @@
 .chat-container {
+    display: flex;
+    flex-direction: column-reverse;
     overflow-y: scroll;
 }
 .chat-container::-webkit-scrollbar {

@@ -1,9 +1,9 @@
 import './index.css'
 
-import ChatHeader from '../ChatHeader';
-import MessageInput from '../MessageInput';
+import ChatHeader from '../ChatHeader'
+import MessageInput from '../MessageInput'
 
-const  ChatWindow = () => {
+const ChatWindow = () => {
   return (
     <div className="chat-window">
       <ChatHeader />
@@ -12,4 +12,4 @@ const  ChatWindow = () => {
   );
 }
 
-export default ChatWindow;
+export default ChatWindow

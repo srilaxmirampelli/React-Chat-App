@@ -1,7 +1,7 @@
 import './index.css'
-import { FaUserGroup } from "react-icons/fa6";
+import { FaUserGroup } from "react-icons/fa6"
 
-function ChatHeader() {
+const ChatHeader = () => {
     return (
       <>
         <div className="chat-header-container">
@@ -18,4 +18,4 @@ function ChatHeader() {
     );
   }
   
-  export default ChatHeader;
+  export default ChatHeader
