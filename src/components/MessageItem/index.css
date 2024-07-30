@@ -1,0 +1,78 @@
+.message-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.msg-header {
+    display: flex;
+    align-items: center;
+}
+.msg-profile-pic {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #f28b82;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    margin-right: 14px;
+}
+.user {
+    font-size: 20px;
+    color: rgb(52, 51, 51);
+    margin-bottom: 0;
+    font-size: 19px;
+    
+}
+.msg-sent-time {
+    font-size: 16px;
+    color: gray;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.msg-card {
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 12px;
+    margin-left: 50px;
+    
+}
+.message {
+    margin: 0;
+    font-size: 18px;
+    color: rgb(38, 37, 37);
+    font-weight: 500;
+}
+.like-container {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+}
+.like-button {
+    cursor: pointer;
+    margin-right: 5px;
+    color: gray;
+    transition: color 0.3s ease;
+
+}
+
+.like-button.liked {
+    color: dodgerblue;
+}
+.likes-count {
+    color: rgb(95, 94, 94);
+    font-size: 14px;
+    font-weight: 500;
+}

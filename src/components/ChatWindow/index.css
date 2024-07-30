@@ -1,0 +1,13 @@
+.chat-window {
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 40px;
+    background-color: rgb(239, 245, 251);
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.chat-message-container {
+    overflow-y: scroll;
+}
