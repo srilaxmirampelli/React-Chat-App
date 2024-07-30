@@ -1,5 +1,8 @@
 .chat-container {
-    overflow-y: auto;
+    overflow-y: scroll;
+}
+.chat-container::-webkit-scrollbar {
+    display: none;
 }
 
 .send-btn-container {
@@ -60,19 +63,23 @@
 .user-list-dropdown {
     position: absolute;
     bottom: 90px;
-    left: 27%;
+    left: 26%;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 4px;
-    width: 100px;
+    width: 150px;
     max-height: 150px;
-    overflow-y: auto;
+    overflow-y: scroll;
     z-index: 10;
+}
+.user-list-dropdown::-webkit-scrollbar {
+    display: none;
 }
 
 .user-list-item {
     padding: 10px;
     cursor: pointer;
+    text-align: center;
 }
 
 .user-list-item:hover {

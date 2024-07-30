@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CiCirclePlus } from "react-icons/ci";
 import './index.css';
 
 const conversations = ["Poland Office", "Introductions", "India Office"];
 
 const Sidebar = () => {
+  const [activeConversation, setActiveConversation] = useState(null)
   const sidebarHeader = () => {
     return (
       <div className="sidebar-header">
@@ -22,6 +23,10 @@ const Sidebar = () => {
     );
   };
 
+  const onSelectConversation = (index) => {
+    setActiveConversation(index);
+  };
+
   const conversationList = () => {
     return (
       <div className="conversation-list">
@@ -30,7 +35,7 @@ const Sidebar = () => {
         <CiCirclePlus color = "gray" size={26}/>
         </div>
         {conversations.map((conv, index) => (
-          <div key={index} className="conversation-item">
+          <div key={index} className={`conversation-item ${activeConversation === index? 'active': ""}`} onClick={() => onSelectConversation(index)} >
           <p className="conv-item-hash">#</p>
           <p className="conv-item">{conv}</p>
         </div>

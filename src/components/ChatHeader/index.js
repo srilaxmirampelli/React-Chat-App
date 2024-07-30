@@ -14,7 +14,6 @@ function ChatHeader() {
           <FaUserGroup color = "gray" size = {27}/>
         </div>
         </div>
-        <hr className='hr-line'/>
       </>
     );
   }

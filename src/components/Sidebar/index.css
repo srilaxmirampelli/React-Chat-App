@@ -81,7 +81,10 @@
     font-weight: 500;
     cursor: pointer;
 }
-
+.conversation-item.active {
+  background-color: dodgerblue;
+  color: white;
+}
 .conv-item-hash {
     background-color: rgb(240, 236, 236);
     border-radius: 10px;
@@ -90,8 +93,4 @@
     margin-right: 20px;
     margin-left: 20px;
     font-size: 18px;
-}
-.conversation-item:hover {
-  background-color: dodgerblue;
-  color: white;
 }

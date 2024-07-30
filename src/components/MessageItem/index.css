@@ -36,7 +36,9 @@
     margin-top: 0;
     margin-bottom: 0;
 }
-
+.msg-card-like-container {
+    display: flex;
+}
 .msg-card {
     background-color: white;
     border-top-right-radius: 10px;
@@ -47,7 +49,7 @@
     padding-right: 18px;
     padding-bottom: 12px;
     margin-left: 50px;
-    
+    width: fit-content;
 }
 .message {
     margin: 0;
@@ -73,6 +75,6 @@
 }
 .likes-count {
     color: rgb(95, 94, 94);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
 }
