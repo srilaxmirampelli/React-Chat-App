@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import './index.css';
 import MessageItem from '../MessageItem';
 import { MdOutlineEmojiEmotions } from "react-icons/md";
@@ -61,12 +61,7 @@ const MessageInput = () => {
         }
     };
 
-    useEffect(() => {
-        if (messageInputRef.current && cursorPosition !== null) {
-            messageInputRef.current.setSelectionRange(cursorPosition, cursorPosition);
-        }
-    }, [message]);
-
+    
     return (
         <>
             <div className="chat-container">
